@@ -1,34 +1,46 @@
+
+<!--Nessa linha defina o tipo de documento-->
 <!DOCTYPE html>
+<!--Nessa linha defina o idioma-->
 <html lang="en">
-<head>
+<!--Nessa linha começa a cabeça-->
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handson 14</title>
+<!--Nessa linha termina a cabeça-->
 </head>
 <body>
+<!--Corpo-->
     <!--
         Crie um algoritmo que leia a entrada de receita da sua casa(total) e total de saidas
         mostrar o saldo. se o saldo for superior a 10.000 mostre um alert ("investir na bolsa")
-    -->
-    Digite sua renda familiar <input type="number" id="valor1">
+    -->  
+    <!--Caixa de texto-->
+     Digite sua renda familiar <input type="number" id="valor1">
     Digite quando gasta da renda familiar <input type="number" id="valor2">
+    <!--Defina o botão-->
     <button onclick="total()">Calcular Total</button>
+    <!--Paragrafo-->
     <p id="total"></p>
     
     <script>
-        function total(){
-            var valor1 = parseFloat(document.getElementById ("valor1").value)
-            var valor2 = parseFloat(document.getElementById ("valor2").value)
-            var saldoTotal = (valor1 - valor2)
+        //declarando uma função
+        function total(){//abertura - inicio
+            var valor1 = parseFloat(document.getElementById ("valor1").value) //declarando uma variavel
+            var valor2 = parseFloat(document.getElementById ("valor2").value) //declarando uma variavel
+            var saldoTotal = (valor1 - valor2) // declarando uma variavel
 
-            if(saldoTotal > 10000){
+            if(saldoTotal > 10000){ //se for verdadeiro
+                //é maior
                 alert("Investa na bolsa!")
 
-            }else{
+            }else{ //se for falso
+                // é menor
                 alert("Não invista na bolsa!")
             }
-        }
+        } //encerramento -fim
     </script>
-</body>
-</html>
+</body> <!--Encerramento do corpo-->
+</html> <!--Encerramento do html-->
