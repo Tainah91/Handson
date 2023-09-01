@@ -1,27 +1,40 @@
+ <!--Nessa linha defina o tipo de documento-->
  <!DOCTYPE html>
+ <!--Nessa linha eu defino o idioma-->
  <html lang="en">
+<!--Cabeça-->
  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handson 04</title>
  </head>
- <body>
+<!--Corpo--> 
+<body>
+    <!--Caixinha de Texto-->
 
     idade <input type="text" id="idade">
+    <!--Define um botão-->
     <button onclick="validaIdade()"> verificar</button>
+    <!--Início do programa Java script-->
 
     <script>
-        function validaIdade(){
+        /*ousado:positivo, negativo e nulo*/
+            //declarando uma função
+        function validaIdade(){//abertura - início
+            //declarando uma variavel
             var idade= document.getElementById("idade").value;
+            //usando uma estrutura de seleção ou condição
             
-            if(idade >= 18){
+            if(idade >= 18){ // se for verdairo
+                //é maior
                 alert ("de maior!")
-            }else{
+            }else{ //se for falso
+                // é menor
                 alert ("de menor!")
             }
-        }
-    </script>
+        } //encerramento - fim
+    </script>   <!--Fim do Java script-->
     
- </body>
- </html>
+ </body>  <!--Encerrando o corpo-->
+ </html> <!--Encerrando o html-->
